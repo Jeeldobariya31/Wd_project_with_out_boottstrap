@@ -1,0 +1,79 @@
+/* Default styles for larger screens */
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+    
+    /* Ensure images are responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Flexbox for centering */
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Navigation bar styles */
+    .nevbar {
+        display: flex;
+        justify-content: center;
+        background-color: #caf0f8;
+        padding: 10px;
+    }
+    
+    .nevbar nav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+    
+    /* Media query for tablets and smaller laptops */
+    @media screen and (max-width: 1024px) {
+        .nevbar {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .nevbar nav a {
+            font-size: 16px;
+        }
+    }
+    
+    /* Media query for mobile screens */
+    @media screen and (max-width: 768px) {
+        .nevbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+        }
+    
+        .nevbar nav a {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+        }
+    
+        .header h1 {
+            font-size: 24px;
+        }
+    
+        .aboutindia, .famouslandmark, .indianculture, .indiancuisine {
+            width: 90%;
+            padding: 10px;
+        }
+    
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    

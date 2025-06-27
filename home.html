@@ -1,45 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-</head>
-<body>
+
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>HOME</title>
+         <link rel="icon" type="image/png" href="./JD MICRO LOGO.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="background.css">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="tital.css">
+        <link rel="stylesheet" href="typing.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            #homea{
+            color: black;
+        }
+        </style>
     </head>
     <body>
+        <!-- <video autoplay muted loop id="bg-video">
+            <source src="./3059865-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+     -->
         <div class="main">
-            <div class="header">
-                <h1>
-                    Welcome to <mark>Incredible India</mark>
+            <div>
+                <h1 id="firstheading" class="typing">
+                    <i class="fa-solid fa-fan fa-shake"></i>  Welcome to Incredible India <i class="fa-solid fa-fan fa-shake"></i>
                 </h1>
-                 <h3>
+            </div>
+            <div class="header">
+                <div class="nevbar">
+                    <div class="linksofh">
+                        <nav>
+                            <label for=""><a id="homea" class="a" href="home.html">Home</a></label> 
+                            <label for=""><a id="culturea" class="a" href="culture.html">Culture</a></label>
+                            <label for=""><a id="landmarksa" class="a"  href="landmarks.html">landmarks</a></label> 
+                            <label for=""><a id="cuisinea"  class="a"href="cuisine.html">Cuisine</a></label>
+                            <label for=""><a id="contactusa" class="a" href="contactus.html">Contact Us</a></label>
+                        </nav>
+                        <!-- <button>change font </button> -->
+                    </div>
+                  
+                      <div class="logojd"></div>
+                </div>
+                <div class="header typing">
+                <!-- <h1 id="mainheading">
+                    Welcome to Incredible India
+                </h1> -->
+                 <h4>
                     Discover the diversity,beauty,and rich heritage of India!
 
-                 </h3>
-               <nav class="nevbar" >
-                 <ul>
-                     <li><a href="home.html">Home</a></li>
-                     <li><a href="culture.html">Culture</a></li>
-                     <li><a href="landmarks.html">landmarks</a></li>
-                     <li><a href="cuisine.html">Cuisine</a></li>
-                     <li><a href="contactus.html">Contact Us</a></li>
-                 </ul>
-              </nav>
+                 </h4>
             </div>
-            <div class="aboutindia">
-                <h2>
+            <div class="aboutindia" id="div">
+                <h3>
                     About India
-                </h2>
+                </h3>
                 <p>India is a land of incredible diversity. From the snow-capped peaks of the <i>Himalayas</i>to the serene backwaters of Kerala, every corner of India tells a unique story. India is the <strong>second-most populous country</strong> in the world and boasts a history spanning thousands of years. Its rich traditions have left an indelible mark on the world.</p>
 
-                <img src="./india_map.jpg" alt="can't upload" height="500px" width="800px">
+                <img src="./india_map.jpg" alt="can't upload" >
 
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India:A land of cultural and geographical diversity</p>
 
@@ -53,11 +76,11 @@
              </ul>
 
             </div>
-            <div class="famouslandmark">
-                <h2>
-                    Famous Landmarks
-                </h2>
-                <p>India is home to <mark>29 UNESCO World Heritage Sites</mark>,making it a paradise for history and architecture enthusiasts.</p>
+            <div class="famouslandmark" id="div">
+                <h3>
+                    Famous Landmarks 
+                </h3>
+                <p>India is home to 29 UNESCO World Heritage Sites ,making it a paradise for history and architecture enthusiasts.</p>
     
                 <img src="./tajmahal.jpg" alt="can't upload">
                 <p>1. The Taj Mahal,a symbol of eternal love</p>
@@ -67,11 +90,10 @@
               <p><i>Don't miss exploring the intricate carvings,towering minarets,and breathtaking landscapes!</i></p> 
     
             </div>
-            <div class="indianculture">
-                <h2>
+            <div class="indianculture" id="div">
+                <h3>
                     Indian Culture
-
-                </h2>
+                </h3>
 
                  <p>India's <strong>cultural heritage</strong>is a blend of various traditions,languages,and religions. Each region has its unique identity and traditions that are celebrated through festivals and daily life.Here are some highlights:</p>
 
@@ -84,10 +106,10 @@
                  <img src="./dance.jpg" alt="can't upload">
                  <p>A glimpse of Indian Classical Dance</p>
             </div>
-            <div class="indiancuisine">
-                <h2>
-                    Delicious Indian Cuisine
-                </h2>
+            <div class="indiancuisine" id="div">
+                <h3>
+                    Delicious Indian Cuisine 
+                </h3>
           
                  <p>Indian food is as diverse as its culture. From the fiery curies of the south to the hearty bread of the north,there's something for everyone. Popular dishes include:</p>
 
@@ -97,19 +119,22 @@
                      <li><b>Street Food:</b>Pani puri,chaat,and vada pav.</li>
                   </ul>
 
-                   <img src="./biryani.jpg" alt="can't upload">
-                   <p>Delicious Hyderabadi Biryani</p>
+                   <div class="box"><img src="./biryani.jpg" alt="can't upload">
+                    <p>Delicious Hyderabadi Biryani</p></div>
 
-                  <img src="./street_food.jpg" alt="can't upload">
-                  <p>Colorful and flavorful Indian street food</p>
+                  <div class="box"><img src="./street_food.jpg" alt="can't upload">
+                    <p>Colorful and flavorful Indian street food</p></div>
 
             </div>
-            <div class="footer">
+            <div class="footer" id="div">
                 <footer>
                     <p><i>contact us at <a href="mailto:info@incredibleindia.com">info@incredibleindia.com</a></i></p>
             
-                    <p>
-                        © 2025 Incredible India Project. All rights reserved.
+                    <p class="typings">
+                        <i class="fa-solid fa-copyright fa-bounce"></i> 2025 Incredible India Project. All rights reserved.
+                        <br>
+                        <br> 
+                        OWNER : MR.JEEL DOBARIYA
                     </p>
             
                     <p>Follow us on: <a href="https://www.facebook.com/">Facebook</a>|<a href="https://x.com/?lang=en&mx=2">Twitter</a></p>
@@ -118,7 +143,5 @@
             </div>
 
         </div>
-    </body>
-    </html>
 </body>
 </html>

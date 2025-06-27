@@ -1,0 +1,107 @@
+/* body{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/200px-Ashoka_Chakra.svg.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto;
+} */
+/* Common Section Box */
+.section-box {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px 0 30px 0;
+    padding: 10px;
+    box-shadow: 12px 12px 22px 3px black;
+}
+
+/* Apply to multiple sections */
+.aboutindia, .famouslandmark, .indianculture, .indiancuisine,
+.north, .south, .sweet, .festival, .languages, .TraditionalAttire,
+.Iconic, .state, .funfact, .form, .information, .footer {
+    @extend .section-box;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: aliceblue;
+    color: red;
+    transform: scale(1.03);
+    font-size: x-large;
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Custom Bullet Points */
+::marker {
+    content: "➣ ";
+    font-size: 1.2em;
+    color:#073b4c;
+}
+
+
+#div p::before{
+    content: "➻ ";
+    color: #073b4c;
+}
+h3:first-letter{
+    color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .section-box {
+        padding: 8px;
+        margin: 8px;
+        box-shadow: 8px 8px 16px 2px black;
+    }
+
+    tr:hover {
+        font-size: large;
+        transform: scale(1.02);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-box {
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 5px 10px 1px black;
+        border-radius: 5px;
+    }
+
+    tr:hover {
+        font-size: medium;
+        transform: scale(1.01);
+    }
+
+    /* Reduce Animation Impact */
+    @keyframes slideInRight {
+        from { transform: translateX(50%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+        from { transform: translateX(-50%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+}

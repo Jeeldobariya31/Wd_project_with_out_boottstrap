@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dancing light.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Concert Lights</title>
+</head>
+<html>
+<body>
+        <div class="nevbar">
+                <div class="linksofh">
+                        <nav>
+                              <a id="dance" href="./home.html">BACK TO HOME</a>
+                        </nav>
+                </div>
+                <div class="logojd"></div>
+        </div>
+    <div class="main">
+        <div class="music-container">
+                <video id="concertVideo" width="400" controls autoplay loop>
+                        <source src="./_Abhi Toh Party Shuru Hui Hai_ FULL VIDEO Song _ Khoobsurat _ Badshah _ Aastha(720P_HD).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+        </div>
+        
+
+        <div class="row">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+        <div class="row">
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+            </div>
+        <div class="row">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+        <div class="row">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+        <div class="row">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+        <div class="row">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </div>
+        
+    </div>
+    <button onclick="startLights()">Start Lights</button>
+    <button onclick="stopLights()">Stop Lights</button>
+    
+    <script>
+        function startLights() {
+            document.querySelectorAll('.light').forEach(light => {
+                light.classList.add('dancing');
+            });
+        }
+        
+        function stopLights() {
+            document.querySelectorAll('.light').forEach(light => {
+                light.classList.remove('dancing');
+            });
+        }
+        
+    </script>
+</body>
+</html>

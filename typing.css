@@ -1,0 +1,26 @@
+@keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+.typing {
+        font-size: 28px;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 0;
+        animation: typing 3s steps(30) forwards, blink 0.8s infinite;
+        animation-delay: 1s;
+    }
+    .typings {
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        width: 0;
+        animation: typing 2s linear forwards infinite, blink 0.8s infinite;
+        animation-delay: 0s;
+    }

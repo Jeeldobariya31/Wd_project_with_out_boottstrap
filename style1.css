@@ -1,0 +1,81 @@
+/* CRAZY CSS STYLES */
+body {
+        background: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff6600);
+        background-size: 400% 400%;
+        animation: bgAnimation 10s infinite alternate;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    
+    @keyframes bgAnimation {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+    
+    h1, h3 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+        animation: neonGlow 1.5s infinite alternate;
+    }
+    
+    @keyframes neonGlow {
+        0% { text-shadow: 0px 0px 10px #ff0000; }
+        100% { text-shadow: 0px 0px 20px #00ff00; }
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffcc00;
+        padding: 10px 20px;
+        background: #ff00ff;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    a:hover {
+        transform: rotate(10deg) scale(1.2);
+        background: #00ff00;
+    }
+    
+    img {
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 20px #ff0000;
+        border-radius: 15px;
+        transition: transform 0.3s;
+    }
+    
+    img:hover {
+        transform: scale(1.1) rotate(-5deg);
+    }
+    
+    #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+    }
+    
+    footer {
+        padding: 20px;
+        background: #000;
+        color: #ffcc00;
+        font-size: 1.2em;
+        text-shadow: 2px 2px 4px #ff00ff;
+        border-top: 4px solid #ff6600;
+    }
+    

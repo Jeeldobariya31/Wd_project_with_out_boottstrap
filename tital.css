@@ -1,0 +1,44 @@
+#firstheading {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        
+    }
+    @media screen and (max-width: 480px) {
+        #firstheading {
+            font-size: 1px;
+            font-weight: bold;
+            text-align: left;
+            width: 470px;
+            text-transform: uppercase;
+            color: black;
+            
+        }
+        body{
+            font-size: x-small;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        #firstheading {
+            font-size:24px;
+            font-weight: bold;
+            text-align: left;
+            width: 768px;
+            text-transform: uppercase;
+            color: black;
+            
+        }
+        body{
+            font-size: small;
+        }
+        
+    }
+    @media screen and (max-width: 1024px) {
+        #firstheading {
+            width: 1024px;
+        
+        }
+    }
+    
